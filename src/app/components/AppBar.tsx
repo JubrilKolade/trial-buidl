@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 const AppBar:FC = () => {
   return (
-    <div className="flex items-center justify-between p-2 shadow-lg text-neutral-content border border-red-500 border-solid m-8">
+    <div className="flex items-center justify-between p-2 shadow-lg text-neutral-content m-8">
       <h1 className='font-bold text-3xl md:text-4xl text-blue-500'>
         Bond<span className='text-white text-5xl'>X</span>
       </h1>

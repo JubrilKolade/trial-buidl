@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Footer = () => {
+const Footer:FC = () => {
+    const currentYear = new Date().getFullYear();
   return (
     <div className='mt-5 mb-10 p-5'>
         <div className='border border-gray-500 w-full mb-20'></div>
@@ -16,6 +17,7 @@ const Footer = () => {
             <a><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
             
         </div>
+        <p className='text-center'>All rights reserved, <span className='text-blue-500'>Bond</span>X {currentYear} </p>
     </div>
   )
 }
